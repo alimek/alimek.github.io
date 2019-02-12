@@ -3,11 +3,7 @@ import * as React from 'react';
 import { Description, Header } from './styles';
 import { Page } from '../../components';
 
-interface ISkillsPropTypes {
-
-}
-
-class Skills extends React.Component<ISkillsPropTypes> {
+class Skills extends React.Component {
   render() {
     return (
       <Page name="skills">
@@ -17,7 +13,7 @@ class Skills extends React.Component<ISkillsPropTypes> {
           React.JS fan. Currently mainly focused on JavaScript language and creating native mobile apps using ReactNative framework.
         </Description>
         <Description>
-          In my whole carrier I used languages mainly PHP and JavaScript (with Flow or TypeScript). While developing mobile apps I also used Java and Objective-C for small changes on native side for ReactNative.
+          In my whole career I used few languages, mainly PHP and JavaScript (with Flow or TypeScript). While developing mobile apps I also used Java and Objective-C for small changes on native side for ReactNative.
         </Description>
         <Description>
           I used frameworks: Symfony 2/3, ExpressJS, AngularJS, ReactJS, ReactNative.
