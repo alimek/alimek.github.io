@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "theme": "chakra-cli tokens ./app/theme.ts",
+    "theme": "chakra-cli tokens app/theme/index.ts",
     "postinstall": "yarn theme"
   },
   "dependencies": {

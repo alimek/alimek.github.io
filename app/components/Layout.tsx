@@ -1,4 +1,4 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { PropsWithChildren, useCallback, useEffect, useState } from "react";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -22,12 +22,11 @@ export const Layout = ({ children }: PropsWithChildren) => {
   }, []);
 
   return (
-    <Flex bgGradient="linear(to-b, gray.100, white)">
+    <Flex flex={1} bgGradient="linear(to-b, gray.100, white)">
       <Flex
         flexDirection="column"
-        minWidth="max-content"
         flex={1}
-        margin="3xl"
+        m={["xs", "m", "xl"]}
         border="solid"
         borderColor="borderLight"
         borderWidth={1}
@@ -37,9 +36,16 @@ export const Layout = ({ children }: PropsWithChildren) => {
         backgroundColor="white"
       >
         <Header />
-        <Box flex={1} shadow={2} overflowY="auto" px="m" sx={{ minHeight }}>
+        <Flex
+          flexDirection="column"
+          flex={1}
+          overflowY="auto"
+          px={["m", "m", "l", "xl"]}
+          py="m"
+          sx={{ minHeight }}
+        >
           {children}
-        </Box>
+        </Flex>
         <Footer />
       </Flex>
     </Flex>

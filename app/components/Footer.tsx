@@ -4,7 +4,13 @@ import NextLink from "next/link";
 
 export const Footer = () => {
   return (
-    <Flex px="m" py="m" flexDirection="row" alignItems="center" id="footer">
+    <Flex
+      px="m"
+      py="m"
+      flexDirection={["column", "row"]}
+      alignItems="center"
+      id="footer"
+    >
       <HStack spacing={4}>
         <NextLink href="https://twitter.com/alimek_" passHref>
           <Link>
