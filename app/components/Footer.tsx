@@ -1,5 +1,5 @@
 import { Flex, HStack, Icon, Link, Spacer, Text } from "@chakra-ui/react";
-import { FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import NextLink from "next/link";
 
 export const Footer = () => {
@@ -22,11 +22,20 @@ export const Footer = () => {
             />
           </Link>
         </NextLink>
-
         <NextLink href="https://www.linkedin.com/in/gmandziak" passHref>
           <Link>
             <Icon
               as={FaLinkedin}
+              color="borderLight"
+              _hover={{ color: "border" }}
+              fontSize="x-large"
+            />
+          </Link>
+        </NextLink>
+        <NextLink href="https://github.com/alimek" passHref>
+          <Link>
+            <Icon
+              as={FaGithub}
               color="borderLight"
               _hover={{ color: "border" }}
               fontSize="x-large"
