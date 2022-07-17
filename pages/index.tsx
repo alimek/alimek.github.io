@@ -187,6 +187,7 @@ const Home: NextPage = () => {
             style={{ alignSelf: "flex-end" }}
             width={961 * imageScale}
             height={1706 * imageScale}
+            layout="fixed"
             src={require("@/assets/me.png")}
             alt="alimek"
           />
